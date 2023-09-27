@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<input class="atuin-btn" type="button" value="Открыть форму" id="lm_button" onclick="PopupWindow()">
+	<div id="mypopup" class="popup">
+		<div class="popup_content">
+			<div class="popup_body">
+				<form action="thank-you.html">
+					<h2>Стать партнёром проекта</h2>
+					<div class="flex-container">
+						<div>
+							<div class="form-group organization text-field text-field_floating">
+								<input class="text-field__input" id="name" type="text" name="email" value="АВЦ" />
+								<label class="text-field__label" id="nameLabel"><span>*</span>Название организации</label>
+							</div>
+							<div class="form-group organization text-field text-field_floating">
+								<input class="text-field__input" id="telephone" type="tel" name="email" value="+7 933 848-34-33" />
+								<label class="text-field__label" id="telephoneLabel"><span>*</span>Телефон</label>
+							</div>
+							<div class="form-group organization text-field text-field_floating">
+								<input class="text-field__input" id="email" type="email" name="email" value="avg@gmail.com" />
+								<label class="text-field__label" id="emailLabel"><span>*</span>E-mail</label>
+							</div>
+						</div>
+						<div class="push">
+            <p class="logo">&emsp;&emsp;<span>*</span>Логотип (jpeg, png)</p>
+							<div id="priview-avatar">
+									<input type="file" name="image" id="image" accept="image/*" />
+									<div class="form-group" id="preview">
+										<div class="image" id="avatar"></div>
+											<button id="remove-image-button">
+									      <span class="closeModal"></span>
+									  	</button>
+										<div class="choice">
+										<span class="open" id="upload-button" aria-labelledby="image" aria-describedby="image">
+											<i class="fa fa-clone" style="font-size: 150%"></i><br>Выбирите<br>файл
+										</span>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="form-group gender text-field text-field_floating">
+						<select id="orientation" class="text-field__select" name="choice">
+					          <option value="" selected disabled>Экология</option>
+					          <option value="Промышленность">Промышленность</option>
+					          <option value="Обучение">Обучение</option>
+					          <option value="Разработка">Разработка</option>
+					        </select>
+						<label class="text-field__label" id="orientationLabel"><span>*</span>Направление</label>
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-dribbble" id="avc" aria-hidden="true "></i>
+						<input class="text-field__text" id="avcInput" type="text" name="avc" value="avc.ru" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-vk" id="facebook" aria-hidden="true "></i>
+						<input class="text-field__text" id="vkInput" type="text" name="vk" value="vk.com/shans" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-odnoklassniki" id="ok" aria-hidden="true "></i>
+						<input class="text-field__text" id="okInput" type="text" name="ok" value="ok.com/shans" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-facebook" id="facebook" aria-hidden="true "></i>
+						<input class="text-field__text" id="facebookInput" type="text" name="facebook" value="facebook.com/shans" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-instagram" id="insta" aria-hidden="true"></i>
+						<input class="text-field__text" id="instaInput" type="text" name="instagramm" value="instagramm.com/shans" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<i class="fa fa-youtube-play" id="youtube" aria-hidden="true"></i>
+						<input class="text-field__text" id="youtubeInput" type="text" name="youtube" value="youtube.com/shans" />
+					</div>
+					<div class="form-group organization text-field text-field_floating">
+						<input class="text-field__input" id="chief" type="text" name="chief" value="Александров Иван Васильевич" />
+						<label class="text-field__label" id="chiefLabel"><span>*</span>Руководитель</label>
+					</div>
+
+					<div class="form-group submit-btn">
+						<input type="submit" value="Стать партнером проекта">
+						<span class="close" style="font-weight: normal" onclick="PopupWindow()">Отменить</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
